@@ -1,0 +1,27 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "01983648-f9d4-7424-a96a-a776c1c5d5cc",
+  "main": "./src/worker/index.ts",
+  "compatibility_date": "2025-06-17",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "assets": {
+    "not_found_handling": "single-page-application"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "01983648-f9d4-7424-a96a-a776c1c5d5cc",
+      "database_id": "01983648-f9d4-7424-a96a-a776c1c5d5cc"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "R2_BUCKET",
+      "bucket_name": "01983648-f9d4-7424-a96a-a776c1c5d5cc"
+    }
+  ]
+}

@@ -1,258 +1,46 @@
 <!DOCTYPE html>
-<html lang="te">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>తెలుగు వార్తలు - Telugu News</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header__content">
-                <div class="header__brand">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMzAiIGZpbGw9IiMyNTYzRUIiLz4KPHRleHQgeD0iMzAiIHk9IjM4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJ3aGl0ZSI+VE48L3RleHQ+Cjwvc3ZnPgo=" 
-                         alt="తెలుగు న్యూస్ లోగో" 
-                         class="header__logo" 
-                         id="headerLogo">
-                    <div class="header__title-section">
-                        <h1 class="header__title">తెలుగు వార్తలు</h1>
-                        <p class="header__tagline">తాజా వార్తలు, వివరణాత్మక విశ్లేషణ మరియు ముఖ్యమైన సంఘటనల సమగ్ర కవరేజీ</p>
-                    </div>
-                </div>
-            </div>
-            <nav class="header__nav">
-                <a href="#home" class="nav__link active">హోమ్</a>
-                <a href="#politics" class="nav__link">రాజకీయాలు</a>
-                <a href="#business" class="nav__link">వ్యాపారం</a>
-                <a href="#cinema" class="nav__link">సినిమా</a>
-                <a href="#sports" class="nav__link">క్రీడలు</a>
-                <a href="#health" class="nav__link">ఆరోగ్యం</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Breaking News -->
-    <div class="breaking-news">
-        <div class="container">
-            <div class="breaking-news__content">
-                <span class="breaking-news__label">బ్రేకింగ్ న్యూస్</span>
-                <div class="breaking-news__text" id="breakingNewsText">
-                    తెలంగాణలో కొత్త IT పాలసీ ప్రకటన • హైదరాబాద్ మెట్రో కొత్త రూట్ ప్రారంభం • పుష్ప 2 సినిమా బాక్సాఫీస్ రికార్డులు
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Content -->
-    <main class="main">
-        <div class="container">
-            <div class="layout">
-                <!-- Main Content Area -->
-                <div class="content">
-                    <!-- Featured News Section -->
-                    <section class="section">
-                        <h2 class="section__title">ముఖ్య వార్తలు</h2>
-                        <div class="featured-news" id="featuredNews">
-                            <!-- Featured news will be populated by JavaScript -->
-                        </div>
-                    </section>
-
-                    <!-- Latest News Section -->
-                    <section class="section">
-                        <h2 class="section__title">తాజా వార్తలు</h2>
-                        <div class="news-grid" id="latestNews">
-                            <!-- Latest news will be populated by JavaScript -->
-                        </div>
-                        <div class="section__footer">
-                            <a href="#" class="view-more">మరిన్ని చూడండి →</a>
-                        </div>
-                    </section>
-
-                    <!-- Business News Section -->
-                    <section class="section">
-                        <h2 class="section__title">వ్యాపార వార్తలు</h2>
-                        <div class="news-grid" id="businessNews">
-                            <!-- Business news will be populated by JavaScript -->
-                        </div>
-                        <div class="section__footer">
-                            <a href="#" class="view-more">మరిన్ని చూడండి →</a>
-                        </div>
-                    </section>
-
-                    <!-- Cinema News Section -->
-                    <section class="section">
-                        <h2 class="section__title">సినిమా వార్తలు</h2>
-                        <div class="news-grid" id="cinemaNews">
-                            <!-- Cinema news will be populated by JavaScript -->
-                        </div>
-                        <div class="section__footer">
-                            <a href="#" class="view-more">మరిన్ని చూడండి →</a>
-                        </div>
-                    </section>
-
-                    <!-- Other News Sections -->
-                    <div class="news-sections">
-                        <div class="news-section-item">
-                            <h3 class="news-section__title">ఆరోగ్య వార్తలు</h3>
-                            <div class="news-list">
-                                <a href="#" class="news-list__item">కరోనా కేసులు మళ్లీ పెరుగుతున్నాయి</a>
-                                <a href="#" class="news-list__item">కొత్త వ్యాక్సిన్ అభివృద్ధి ప్రకటన</a>
-                                <a href="#" class="news-list__item">ఆయుష్మాన్ భారత్ కొత్త సదుపాయాలు</a>
-                            </div>
-                        </div>
-                        
-                        <div class="news-section-item">
-                            <h3 class="news-section__title">సైన్స్ & టెక్నాలజీ</h3>
-                            <div class="news-list">
-                                <a href="#" class="news-list__item">ISRO కొత్త ఉపగ్రహ ప్రయోగం</a>
-                                <a href="#" class="news-list__item">AI టెక్నాలజీలో భారత్ పురోగతి</a>
-                                <a href="#" class="news-list__item">5G నెట్‌వర్క్ విస్తరణ</a>
-                            </div>
-                        </div>
-
-                        <div class="news-section-item">
-                            <h3 class="news-section__title">రాష్ట్ర వార్తలు</h3>
-                            <div class="news-list">
-                                <a href="#" class="news-list__item">తెలంగాణ రైతు బంధు పథకం</a>
-                                <a href="#" class="news-list__item">ఆంధ్రప్రదేశ్ పెట్టుబడుల విధానం</a>
-                                <a href="#" class="news-list__item">హైదరాబాద్ మెట్రో విస్తరణ</a>
-                            </div>
-                        </div>
-
-                        <div class="news-section-item">
-                            <h3 class="news-section__title">దేశ వార్తలు</h3>
-                            <div class="news-list">
-                                <a href="#" class="news-list__item">పార్లమెంట్ కొత్త బిల్లు పాస్</a>
-                                <a href="#" class="news-list__item">జీఎస్టీ రేట్లలో మార్పులు</a>
-                                <a href="#" class="news-list__item">డిజిటల్ ఇండియా కొత్త కార్యక్రమాలు</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sidebar -->
-                <aside class="sidebar">
-                    <!-- Weather Widget -->
-                    <div class="widget weather-widget">
-                        <h3 class="widget__title">వాతావరణం</h3>
-                        <div class="weather" id="weather">
-                            <div class="weather__location">హైదరాబాద్</div>
-                            <div class="weather__temp">28°C</div>
-                            <div class="weather__condition">🌤️ తేలికపాటి మేఘాలు</div>
-                            <div class="weather__humidity">తేమ: 65%</div>
-                        </div>
-                    </div>
-
-                    <!-- Trending News -->
-                    <div class="widget">
-                        <h3 class="widget__title">ట్రెండింగ్ వార్తలు</h3>
-                        <div class="trending-news" id="trendingNews">
-                            <!-- Trending news will be populated by JavaScript -->
-                        </div>
-                    </div>
-
-                    <!-- Categories -->
-                    <div class="widget">
-                        <h3 class="widget__title">వర్గాల వారీగా</h3>
-                        <div class="categories-sidebar">
-                            <a href="#politics" class="category-link">రాజకీయాలు</a>
-                            <a href="#business" class="category-link">వ్యాపారం</a>
-                            <a href="#cinema" class="category-link">సినిమా</a>
-                            <a href="#sports" class="category-link">క్రీడలు</a>
-                            <a href="#health" class="category-link">ఆరోగ్యం</a>
-                            <a href="#education" class="category-link">విద్య</a>
-                            <a href="#technology" class="category-link">టెక్నాలజీ</a>
-                            <a href="#auto" class="category-link">ఆటో</a>
-                        </div>
-                    </div>
-
-                    <!-- Latest Updates -->
-                    <div class="widget">
-                        <h3 class="widget__title">తాజా అప్డేట్స్</h3>
-                        <div class="latest-updates">
-                            <div class="update-item">
-                                <span class="update-time">ఇప్పుడే</span>
-                                <a href="#" class="update-link">సీఎం చంద్రబాబు కీలక నిర్ణయం</a>
-                            </div>
-                            <div class="update-item">
-                                <span class="update-time">5 నిమిషాల క్రితం</span>
-                                <a href="#" class="update-link">పుష్ప 2 కొత్త అప్డేట్</a>
-                            </div>
-                            <div class="update-item">
-                                <span class="update-time">10 నిమిషాల క్రితం</span>
-                                <a href="#" class="update-link">వాతావరణ హెచ్చరిక</a>
-                            </div>
-                            <div class="update-item">
-                                <span class="update-time">15 నిమిషాల క్రితం</span>
-                                <a href="#" class="update-link">హైటెక్ సిటీ కొత్త ప్రాజెక్ట్</a>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-        </div>
-    </main>
-
-    <!-- Categories Footer -->
-    <section class="categories-footer">
-        <div class="container">
-            <h2 class="section__title">వర్గాల వారీగా వార్తలు</h2>
-            <div class="categories-grid" id="categoriesGrid">
-                <!-- Categories will be populated by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__section">
-                    <h3 class="footer__title">మెయిన్ సెక్షన్లు</h3>
-                    <div class="footer__links">
-                        <a href="#politics">రాజకీయాలు</a>
-                        <a href="#business">వ్యాపారం</a>
-                        <a href="#cinema">సినిమా</a>
-                        <a href="#sports">క్రీడలు</a>
-                    </div>
-                </div>
-                <div class="footer__section">
-                    <h3 class="footer__title">రాష్ట్ర వార్తలు</h3>
-                    <div class="footer__links">
-                        <a href="#telangana">తెలంగాణ</a>
-                        <a href="#andhra-pradesh">ఆంధ్రప్రదేశ్</a>
-                        <a href="#hyderabad">హైదరాబాద్</a>
-                        <a href="#vijayawada">విజయవాడ</a>
-                    </div>
-                </div>
-                <div class="footer__section">
-                    <h3 class="footer__title">జీవనశైలి</h3>
-                    <div class="footer__links">
-                        <a href="#health">ఆరోగ్యం</a>
-                        <a href="#education">విద్య</a>
-                        <a href="#technology">టెక్నాలజీ</a>
-                        <a href="#auto">ఆటో</a>
-                    </div>
-                </div>
-                <div class="footer__section">
-                    <h3 class="footer__title">సంప్రదింపులు</h3>
-                    <div class="footer__links">
-                        <a href="#about">మా గురించి</a>
-                        <a href="#contact">సంప్రదింపు</a>
-                        <a href="#privacy">గోప్యతా విధానం</a>
-                        <a href="#terms">నియమాలు</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <p>&copy; 2025 తెలుగు వార్తలు. అన్ని హక్కులు సురక్షితం.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="app.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="తెలుగు వార్తలు" />
+    <meta property="og:description" content="విశ్వసనీయ తెలుగు వార్తలు మరియు లేటెస్ట్ అప్‌డేట్‌లు" />
+    <meta
+      property="og:image"
+      content="https://mocha-cdn.com/og.png"
+      type="image/png"
+    />
+    <meta
+      property="og:url"
+      content="https://getmocha.com"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:author" content="తెలుగు వార్తలు" />
+    <meta property="og:site_name" content="తెలుగు వార్తలు" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@telugu_news" />
+    <meta property="twitter:title" content="తెలుగు వార్తలు" />
+    <meta property="twitter:description" content="విశ్వసనీయ తెలుగు వార్తలు మరియు లేటెస్ట్ అప్‌డేట్‌లు" />
+    <meta
+      property="twitter:image"
+      content="https://mocha-cdn.com/og.png"
+      type="image/png"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://mocha-cdn.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://mocha-cdn.com/apple-touch-icon.png"
+      type="image/png"
+    />
+    <title>తెలుగు వార్తలు</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/react-app/main.tsx"></script>
+  </body>
 </html>
